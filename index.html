@@ -481,6 +481,39 @@
       .card dt.h {
         color: var(--verm-deep);
       }
+      .card dt.fee {
+        color: var(--ink);
+      }
+      .card dd.fee {
+        color: var(--ink);
+        font-weight: 500;
+      }
+      .plan .price {
+        font-family: var(--display);
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.4;
+        color: var(--ink);
+        border-top: 1px solid var(--line);
+        padding-top: 12px;
+        margin: 12px 0 8px;
+      }
+      .plan .price small {
+        display: block;
+        font-family: var(--body);
+        font-size: 15px;
+        font-weight: 500;
+        color: var(--note);
+        line-height: 1.6;
+      }
+      .tbl td.p {
+        font-weight: 700;
+        color: var(--ink);
+      }
+      h3.sub {
+        margin: 36px 0 12px;
+        font-size: 24px;
+      }
 
       /* 04 */
       .keep {
@@ -834,7 +867,7 @@
             <a href="#s5"><span>05</span>当社がやってきたこと</a>
           </li>
           <li>
-            <a href="#s6"><span>06</span>進め方とご支援の形</a>
+            <a href="#s6"><span>06</span>ご支援の形と費用</a>
           </li>
           <li>
             <a href="#s7"><span>07</span>本日うかがいたいこと</a>
@@ -1004,7 +1037,7 @@
               "
               >最初に効く</span
             >
-            の印は、時間の戻りが早いと当社が考える3項目です。対象の業務は公開情報からの当社の推定で、「当社の実績」は自社で実際に行ってきたことです。
+            の印は、時間の戻りが早いと当社が考える3項目です。対象の業務は公開情報からの当社の推定で、「当社の実績」は自社で実際に行ってきたことです。各項目の「費用（税別）」は、その項目を扱うご支援の費用で、項目ごとに足し上げるものではありません。
           </p>
 
           <div class="grp">
@@ -1026,6 +1059,10 @@
                 </dd>
                 <dt class="h">人が担う</dt>
                 <dd>何を手放すかの最終判断。</dd>
+                <dt class="fee">費用（税別）</dt>
+                <dd class="fee">
+                  生成AI活用顧問（年額240万円）またはダッシュボード構築（初年度480万円）に含みます。
+                </dd>
               </dl>
             </div>
             <div class="card">
@@ -1041,6 +1078,10 @@
                 </dd>
                 <dt class="h">人が担う</dt>
                 <dd>何を覚えさせるかの選定。</dd>
+                <dt class="fee">費用（税別）</dt>
+                <dd class="fee">
+                  ダッシュボード構築（初年度480万円）に含みます。
+                </dd>
               </dl>
             </div>
             <div class="card">
@@ -1056,6 +1097,10 @@
                 </dd>
                 <dt class="h">人が担う</dt>
                 <dd>送信の判断と、相手との関係に関わる一言。</dd>
+                <dt class="fee">費用（税別）</dt>
+                <dd class="fee">
+                  生成AI活用顧問（年額240万円）またはダッシュボード構築に含みます。
+                </dd>
               </dl>
             </div>
             <div class="card">
@@ -1071,6 +1116,10 @@
                 </dd>
                 <dt class="h">人が担う</dt>
                 <dd>面談そのものと、文面の最終確認。</dd>
+                <dt class="fee">費用（税別）</dt>
+                <dd class="fee">
+                  生成AI活用顧問（年額240万円）またはダッシュボード構築に含みます。
+                </dd>
               </dl>
             </div>
           </div>
@@ -1094,6 +1143,10 @@
                 </dd>
                 <dt class="h">人が担う</dt>
                 <dd>テーマの決定と、言葉の最終確認。</dd>
+                <dt class="fee">費用（税別）</dt>
+                <dd class="fee">
+                  ダッシュボード構築（初年度480万円）に含みます。発信の仕組みだけの場合は「note発信半自動化」（個別お見積り）。
+                </dd>
               </dl>
             </div>
             <div class="card">
@@ -1109,6 +1162,10 @@
                 </dd>
                 <dt class="h">人が担う</dt>
                 <dd>どの媒体に出すかの判断。</dd>
+                <dt class="fee">費用（税別）</dt>
+                <dd class="fee">
+                  生成AI活用支援パック ベーシック（月額20万円）。
+                </dd>
               </dl>
             </div>
             <div class="card">
@@ -1124,6 +1181,10 @@
                 </dd>
                 <dt class="h">人が担う</dt>
                 <dd>事実確認と、配信の判断。</dd>
+                <dt class="fee">費用（税別）</dt>
+                <dd class="fee">
+                  「PR TIMES配信の半自動化」（個別お見積り）。
+                </dd>
               </dl>
             </div>
             <div class="card">
@@ -1139,6 +1200,8 @@
                 </dd>
                 <dt class="h">人が担う</dt>
                 <dd>何を協会の言葉として出すかの判断。</dd>
+                <dt class="fee">費用（税別）</dt>
+                <dd class="fee">「LLMOアナライザー」（個別お見積り）。</dd>
               </dl>
             </div>
           </div>
@@ -1162,6 +1225,11 @@
                 </dd>
                 <dt class="h">人が担う</dt>
                 <dd>講師との調整と、当日の進行。</dd>
+                <dt class="fee">費用（税別）</dt>
+                <dd class="fee">
+                  生成AI活用支援パック
+                  ベーシック（月額20万円）。ダッシュボード構築の中でも扱えます。
+                </dd>
               </dl>
             </div>
             <div class="card">
@@ -1177,6 +1245,10 @@
                 </dd>
                 <dt class="h">人が担う</dt>
                 <dd>入会のご面談と、お一人ずつへの声かけ。</dd>
+                <dt class="fee">費用（税別）</dt>
+                <dd class="fee">
+                  生成AI活用支援パック ベーシック（月額20万円）。
+                </dd>
               </dl>
             </div>
             <div class="card">
@@ -1192,6 +1264,10 @@
                 </dd>
                 <dt class="h">人が担う</dt>
                 <dd>講座の中身と、受講生との対話。</dd>
+                <dt class="fee">費用（税別）</dt>
+                <dd class="fee">
+                  生成AI活用支援パック ベーシック（月額20万円）。
+                </dd>
               </dl>
             </div>
             <div class="card">
@@ -1207,6 +1283,10 @@
                 </dd>
                 <dt class="h">人が担う</dt>
                 <dd>講師への掲載確認と、公開の判断。</dd>
+                <dt class="fee">費用（税別）</dt>
+                <dd class="fee">
+                  生成AI活用支援パック ベーシック（月額20万円）。
+                </dd>
               </dl>
             </div>
           </div>
@@ -1230,6 +1310,11 @@
                 </dd>
                 <dt class="h">人が担う</dt>
                 <dd>新しい会員の方を迎える最初の対話。</dd>
+                <dt class="fee">費用（税別）</dt>
+                <dd class="fee">
+                  生成AI活用支援パック
+                  スタンダード（月額50万円）。フォームや名簿との連携を伴うためです。
+                </dd>
               </dl>
             </div>
             <div class="card">
@@ -1245,6 +1330,10 @@
                 </dd>
                 <dt class="h">人が担う</dt>
                 <dd>提案の中身の判断と、相手企業との対話。</dd>
+                <dt class="fee">費用（税別）</dt>
+                <dd class="fee">
+                  生成AI活用支援パック ベーシック（月額20万円）。
+                </dd>
               </dl>
             </div>
             <div class="card">
@@ -1260,6 +1349,11 @@
                 </dd>
                 <dt class="h">人が担う</dt>
                 <dd>結果の読み解きと、相手企業への伝え方。</dd>
+                <dt class="fee">費用（税別）</dt>
+                <dd class="fee">
+                  生成AI活用支援パック
+                  ベーシック（月額20万円）。集計の自動連携まで行う場合はスタンダード（月額50万円）。
+                </dd>
               </dl>
             </div>
           </div>
@@ -1283,6 +1377,10 @@
                 </dd>
                 <dt class="h">人が担う</dt>
                 <dd>数字を見て、何をやめ、何を増やすかを決めること。</dd>
+                <dt class="fee">費用（税別）</dt>
+                <dd class="fee">
+                  ダッシュボード構築（初年度480万円／一括払い400万円）。
+                </dd>
               </dl>
             </div>
             <div class="card">
@@ -1298,6 +1396,10 @@
                 </dd>
                 <dt class="h">人が担う</dt>
                 <dd>裁定そのもの。</dd>
+                <dt class="fee">費用（税別）</dt>
+                <dd class="fee">
+                  生成AI活用顧問（年額240万円）またはダッシュボード構築に含みます。
+                </dd>
               </dl>
             </div>
             <div class="card">
@@ -1313,6 +1415,10 @@
                 </dd>
                 <dt class="h">人が担う</dt>
                 <dd>線引きの決定と、会員の皆さまへの説明。</dd>
+                <dt class="fee">費用（税別）</dt>
+                <dd class="fee">
+                  生成AI活用顧問（年額240万円）またはダッシュボード構築に含みます。
+                </dd>
               </dl>
             </div>
           </div>
@@ -1424,7 +1530,7 @@
       <section id="s6">
         <div class="wrap">
           <div class="sec-no">06</div>
-          <h2>進め方と、ご支援の形</h2>
+          <h2>進め方と、ご支援の形・費用</h2>
           <p class="intro">
             どの形でも、進め方は同じ4つの段階です。始める前の時間と件数を測り、導入後と比べます。
           </p>
@@ -1465,6 +1571,12 @@
                   到達目標は生産性の実測5倍（目標であり成果保証ではありません）
                 </li>
               </ul>
+              <p class="price">
+                初年度 480万円
+                <small
+                  >月100万円×3か月＋月20万円×9か月。一括払いは400万円（税別）</small
+                >
+              </p>
               <p class="src">対応する項目：A1〜A4、B1、C1、E1、E2</p>
             </div>
             <div class="plan">
@@ -1476,7 +1588,11 @@
                 <li>チャットでの随時相談</li>
                 <li>課題の整理→優先順位→実践→改善</li>
               </ul>
-              <p class="src">対応する項目：A1、A3、B1、E2、E3</p>
+              <p class="price">
+                年額 240万円
+                <small>月換算20万円・年間契約（税別）</small>
+              </p>
+              <p class="src">対応する項目：A1、A3、A4、E2、E3</p>
             </div>
             <div class="plan">
               <span class="who">事務局・講師の皆さまと</span>
@@ -1487,11 +1603,59 @@
                 <li>自動化の実装支援</li>
                 <li>仕組みの連携や開発まで行う形もあります</li>
               </ul>
+              <p class="price">
+                月額 20万円から
+                <small
+                  >ベーシック：月額20万円（6か月120万円）／スタンダード：月額50万円（6か月300万円）（税別）</small
+                >
+              </p>
               <p class="src">対応する項目：B2、C1〜C4、D1〜D3</p>
             </div>
           </div>
+          <h3 class="sub">料金一覧（税別）</h3>
+          <table class="tbl">
+            <tbody>
+              <tr>
+                <th>AI経営＆マーケティングダッシュボード構築</th>
+                <td class="p">
+                  初年度480万円（月100万円×3か月＋月20万円×9か月）<br />一括払い400万円
+                </td>
+                <td class="s">
+                  1〜3か月目は週1回60分を12回、4〜12か月目は月2回30分。代表とCIOの2名が伴走。
+                </td>
+              </tr>
+              <tr>
+                <th>生成AI活用顧問</th>
+                <td class="p">年額240万円（月換算20万円）<br />年間契約</td>
+                <td class="s">
+                  経営者お一人に限定。月2回・各30分のオンライン面談と、チャットでの随時相談。
+                </td>
+              </tr>
+              <tr>
+                <th>生成AI活用支援パック ベーシック</th>
+                <td class="p">月額20万円<br />6か月120万円</td>
+                <td class="s">
+                  業務の棚卸し、活用のレクチャー、自動化の支援。4名まで、当社の稼働は月10時間まで。
+                </td>
+              </tr>
+              <tr>
+                <th>生成AI活用支援パック スタンダード</th>
+                <td class="p">月額50万円<br />6か月300万円</td>
+                <td class="s">
+                  ベーシックの内容に、仕組みの連携と開発を加えた形。
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  note発信半自動化<br />PR TIMES配信の半自動化<br />LLMOアナライザー
+                </th>
+                <td class="p">個別お見積り</td>
+                <td class="s">対象の範囲をうかがったうえでご案内します。</td>
+              </tr>
+            </tbody>
+          </table>
           <p class="src" style="margin-top: 16px">
-            費用は本資料には載せていません。本日のお話をうかがったうえで、合う形と合わせてご案内します。
+            費用は項目ごとに足し上げるものではありません。1つのご支援の中で、複数の項目を扱います。18項目とご支援の対応は当社が置いた想定で、本日のお話に合わせて組み直します。
           </p>
         </div>
       </section>
@@ -1549,7 +1713,7 @@
             当社の実測の出典：「生産性15.4人分
             AI経営実測記録」（2026年8月21日）、「AI支援メニュー一覧」、「note発信半自動化支援」、「PR
             TIMES配信の半自動化」、「LLMOアナライザー
-            ご紹介資料」。換算の係数は自社基準です。
+            ご紹介資料」。換算の係数は自社基準です。費用はいずれも税別で、出典は「AI支援メニュー一覧」です。
           </li>
           <li>
             「当社の実績」のうち数字のない記述は、当社が自社の業務で運用している内容です。
