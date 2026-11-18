@@ -1,0 +1,1565 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>
+      HHOSA様 生成AIで代表の生産性を10倍にするご支援｜株式会社コミクス
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600&family=Noto+Sans+JP:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #221714;
+        --text: #2f2a28;
+        --blue: #0068b6;
+        --blue-deep: #004e8a;
+        --blue-wash: #eef5fb;
+        --verm: #fb4113;
+        --verm-deep: #c9300a;
+        --verm-wash: #fff2ec;
+        --paper: #ffffff;
+        --band: #f5f6f7;
+        --line: #d1d3d7;
+        --note: #4b4643;
+        --display:
+          "Zen Kaku Gothic New", "Noto Sans JP", "Hiragino Sans", "Yu Gothic",
+          sans-serif;
+        --body:
+          "Noto Sans JP", "Hiragino Sans", "Yu Gothic", Meiryo, sans-serif;
+        --num: "Barlow Condensed", "Zen Kaku Gothic New", sans-serif;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+        -webkit-text-size-adjust: 100%;
+      }
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--text);
+        font-family: var(--body);
+        font-size: 17px;
+        line-height: 1.85;
+        overflow-x: hidden;
+      }
+      a {
+        color: var(--blue-deep);
+        text-underline-offset: 3px;
+        overflow-wrap: anywhere;
+      }
+      a:focus-visible {
+        outline: 3px solid var(--verm);
+        outline-offset: 3px;
+      }
+      p {
+        margin: 0 0 1em;
+      }
+      strong {
+        color: var(--ink);
+        font-weight: 700;
+      }
+      h1,
+      h2,
+      h3,
+      h4 {
+        word-break: auto-phrase;
+      }
+      .wrap {
+        max-width: 1040px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+      .nw {
+        white-space: nowrap;
+      }
+
+      .top {
+        border-bottom: 1px solid var(--line);
+        padding: 14px 0;
+        font-size: 15px;
+        color: var(--note);
+      }
+      .top .wrap {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+      .top b {
+        color: var(--blue);
+        font-family: var(--display);
+        letter-spacing: 0.04em;
+      }
+
+      .hero {
+        padding: 60px 0 44px;
+      }
+      .hero .to {
+        display: inline-block;
+        font-family: var(--display);
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.6;
+        color: var(--ink);
+        border-left: 6px solid var(--blue);
+        padding-left: 14px;
+        margin-bottom: 26px;
+      }
+      .hero h1 {
+        font-family: var(--display);
+        font-weight: 900;
+        font-size: clamp(31px, 5vw, 52px);
+        line-height: 1.32;
+        color: var(--ink);
+        margin: 0 0 22px;
+        text-wrap: balance;
+      }
+      .hero h1 em {
+        font-style: normal;
+        color: var(--blue);
+      }
+      .hero .lead {
+        font-size: 19px;
+        max-width: 46em;
+        margin-bottom: 34px;
+      }
+      .facts {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        border-top: 2px solid var(--ink);
+      }
+      .facts > div {
+        padding: 20px 20px 6px 0;
+        border-right: 1px solid var(--line);
+      }
+      .facts > div + div {
+        padding-left: 24px;
+      }
+      .facts > div:last-child {
+        border-right: 0;
+      }
+      .facts .n {
+        font-family: var(--num);
+        font-weight: 600;
+        font-size: 60px;
+        line-height: 1;
+        color: var(--ink);
+      }
+      .facts .n small {
+        font-family: var(--display);
+        font-size: 20px;
+        font-weight: 700;
+        margin-left: 4px;
+      }
+      .facts .n.accent {
+        color: var(--verm-deep);
+      }
+      .facts p {
+        margin: 8px 0 0;
+        font-size: 16px;
+        line-height: 1.6;
+      }
+
+      .toc {
+        background: var(--band);
+        padding: 22px 0;
+      }
+      .toc ol {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 6px 20px;
+      }
+      .toc a {
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 17px;
+        color: var(--ink);
+        display: block;
+        padding: 4px 0;
+      }
+      .toc a span {
+        font-family: var(--num);
+        color: var(--verm-deep);
+        font-size: 20px;
+        margin-right: 8px;
+      }
+      .toc a:hover {
+        color: var(--blue-deep);
+      }
+
+      section {
+        padding: 60px 0 20px;
+      }
+      .sec-no {
+        font-family: var(--num);
+        font-weight: 600;
+        font-size: 22px;
+        color: var(--verm-deep);
+        letter-spacing: 0.08em;
+      }
+      h2 {
+        font-family: var(--display);
+        font-weight: 900;
+        font-size: clamp(26px, 3.6vw, 36px);
+        line-height: 1.4;
+        color: var(--ink);
+        margin: 4px 0 18px;
+        text-wrap: balance;
+      }
+      h3 {
+        font-family: var(--display);
+        font-weight: 700;
+        font-size: 21px;
+        line-height: 1.5;
+        color: var(--ink);
+        margin: 0 0 8px;
+      }
+      .intro {
+        max-width: 46em;
+        margin-bottom: 28px;
+      }
+      .src {
+        font-size: 15px;
+        color: var(--note);
+        line-height: 1.7;
+      }
+      .lbl {
+        display: inline-block;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 1.6;
+        padding: 0 10px;
+        margin-right: 6px;
+        color: #fff;
+        background: var(--ink);
+        vertical-align: 2px;
+      }
+      .lbl.fact {
+        background: var(--blue-deep);
+      }
+      .lbl.est {
+        background: var(--verm-deep);
+      }
+
+      /* 01 */
+      .profile {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        border: 2px solid var(--ink);
+      }
+      .profile > div {
+        padding: 22px 22px 16px;
+        border-right: 1px solid var(--line);
+      }
+      .profile > div:last-child {
+        border-right: 0;
+      }
+      .profile .tag {
+        display: inline-block;
+        font-size: 15px;
+        font-weight: 700;
+        padding: 2px 12px;
+        margin-bottom: 10px;
+        color: #fff;
+        background: var(--blue);
+      }
+      .profile ul {
+        margin: 6px 0 0;
+        padding-left: 1.2em;
+      }
+      .profile li {
+        margin-bottom: 4px;
+      }
+      .rhythm {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 0;
+        margin-top: 22px;
+        border-top: 2px solid var(--ink);
+      }
+      .rhythm > div {
+        padding: 16px 14px 10px 0;
+        border-right: 1px solid var(--line);
+      }
+      .rhythm > div + div {
+        padding-left: 16px;
+      }
+      .rhythm > div:last-child {
+        border-right: 0;
+      }
+      .rhythm .f {
+        font-family: var(--display);
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.2;
+        color: var(--blue-deep);
+      }
+      .rhythm p {
+        margin: 6px 0 0;
+        font-size: 16px;
+        line-height: 1.55;
+      }
+
+      /* 02 */
+      .sort {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+      }
+      .sort > div {
+        background: var(--band);
+        padding: 22px 22px 16px;
+        border-top: 4px solid var(--blue);
+      }
+      .sort > div.ai {
+        border-top-color: var(--verm);
+        background: var(--verm-wash);
+      }
+      .sort .q {
+        font-family: var(--num);
+        font-size: 22px;
+        font-weight: 600;
+        color: var(--verm-deep);
+        letter-spacing: 0.06em;
+      }
+      .sort p {
+        margin: 0 0 8px;
+      }
+      .sort .to2 {
+        font-weight: 700;
+        color: var(--ink);
+      }
+      .steps {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0;
+        margin-top: 28px;
+        border: 2px solid var(--ink);
+      }
+      .steps > div {
+        padding: 22px 22px 14px;
+        border-right: 1px solid var(--line);
+        position: relative;
+      }
+      .steps > div:last-child {
+        border-right: 0;
+        background: var(--blue-wash);
+      }
+      .steps .s {
+        font-family: var(--num);
+        font-weight: 600;
+        font-size: 20px;
+        letter-spacing: 0.08em;
+        color: var(--verm-deep);
+      }
+      .steps .x {
+        font-family: var(--num);
+        font-weight: 600;
+        font-size: 46px;
+        line-height: 1.1;
+        color: var(--ink);
+      }
+      .steps .x small {
+        font-family: var(--display);
+        font-size: 18px;
+        font-weight: 700;
+        margin-left: 4px;
+      }
+      .steps p {
+        margin: 8px 0 8px;
+        font-size: 16.5px;
+        line-height: 1.7;
+      }
+      .caution {
+        border-left: 6px solid var(--verm);
+        background: var(--verm-wash);
+        padding: 16px 20px;
+        margin-top: 22px;
+        font-size: 16.5px;
+      }
+      .caution p:last-child {
+        margin-bottom: 0;
+      }
+
+      /* 03 */
+      .grp {
+        margin: 40px 0 14px;
+        display: flex;
+        align-items: baseline;
+        gap: 14px;
+        border-bottom: 2px solid var(--ink);
+        padding-bottom: 8px;
+        flex-wrap: wrap;
+      }
+      .grp .k {
+        font-family: var(--num);
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 1;
+        color: var(--blue);
+      }
+      .grp h3 {
+        font-size: 24px;
+        margin: 0;
+      }
+      .grp span {
+        font-size: 16px;
+        color: var(--note);
+      }
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+      }
+      .card {
+        border: 1px solid var(--line);
+        padding: 20px 22px 14px;
+        background: #fff;
+      }
+      .card.first {
+        border: 2px solid var(--verm);
+      }
+      .card .id {
+        font-family: var(--num);
+        font-weight: 600;
+        font-size: 20px;
+        color: var(--blue-deep);
+        letter-spacing: 0.06em;
+        margin-right: 8px;
+      }
+      .card .star {
+        display: inline-block;
+        font-size: 15px;
+        font-weight: 700;
+        color: #fff;
+        background: var(--verm-deep);
+        padding: 0 10px;
+        line-height: 1.6;
+        vertical-align: 2px;
+      }
+      .card h4 {
+        font-family: var(--display);
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.5;
+        color: var(--ink);
+        margin: 4px 0 8px;
+      }
+      .card p {
+        font-size: 16.5px;
+        line-height: 1.75;
+        margin: 0 0 8px;
+      }
+      .card dl {
+        margin: 10px 0 0;
+        padding-top: 10px;
+        border-top: 1px dashed var(--line);
+        font-size: 16px;
+        line-height: 1.7;
+      }
+      .card dt {
+        font-weight: 700;
+        color: var(--blue-deep);
+        float: left;
+        clear: left;
+        width: 6.2em;
+      }
+      .card dd {
+        margin: 0 0 6px 6.6em;
+      }
+      .card dt.h {
+        color: var(--verm-deep);
+      }
+
+      /* 04 */
+      .keep {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 0;
+        border: 2px solid var(--ink);
+      }
+      .keep > div {
+        padding: 20px 18px 12px;
+        border-right: 1px solid var(--line);
+      }
+      .keep > div:last-child {
+        border-right: 0;
+      }
+      .keep b {
+        display: block;
+        font-family: var(--display);
+        font-size: 19px;
+        color: var(--ink);
+        line-height: 1.5;
+        margin-bottom: 6px;
+      }
+      .keep p {
+        font-size: 16px;
+        line-height: 1.65;
+        margin: 0 0 6px;
+      }
+
+      /* 05 */
+      .tbl {
+        width: 100%;
+        border-collapse: collapse;
+        border-top: 2px solid var(--ink);
+        font-size: 16.5px;
+      }
+      .tbl th,
+      .tbl td {
+        text-align: left;
+        vertical-align: top;
+        padding: 14px 14px 14px 0;
+        border-bottom: 1px solid var(--line);
+        line-height: 1.7;
+      }
+      .tbl th {
+        width: 30%;
+        color: var(--ink);
+        font-weight: 700;
+      }
+      .tbl td.s {
+        width: 30%;
+        font-size: 15px;
+        color: var(--note);
+      }
+      .tbl .big {
+        font-family: var(--num);
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 1.1;
+        color: var(--blue-deep);
+      }
+
+      /* 06 */
+      .flow {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0;
+        border-top: 2px solid var(--ink);
+        margin-bottom: 30px;
+      }
+      .flow > div {
+        padding: 18px 18px 8px 0;
+        border-right: 1px solid var(--line);
+      }
+      .flow > div + div {
+        padding-left: 18px;
+      }
+      .flow > div:last-child {
+        border-right: 0;
+      }
+      .flow .no {
+        font-family: var(--num);
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 1;
+        color: var(--verm-deep);
+      }
+      .flow b {
+        display: block;
+        font-family: var(--display);
+        font-size: 19px;
+        color: var(--ink);
+        margin: 6px 0 4px;
+      }
+      .flow p {
+        font-size: 16px;
+        line-height: 1.65;
+        margin: 0 0 6px;
+      }
+      .plans {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+      }
+      .plan {
+        border: 1px solid var(--line);
+        padding: 22px 22px 14px;
+      }
+      .plan.main {
+        border: 2px solid var(--blue);
+        background: var(--blue-wash);
+      }
+      .plan .who {
+        display: inline-block;
+        font-size: 15px;
+        font-weight: 700;
+        color: #fff;
+        background: var(--ink);
+        padding: 0 10px;
+        line-height: 1.6;
+        margin-bottom: 8px;
+      }
+      .plan.main .who {
+        background: var(--blue);
+      }
+      .plan ul {
+        margin: 6px 0 8px;
+        padding-left: 1.2em;
+        font-size: 16.5px;
+        line-height: 1.7;
+      }
+      .plan p {
+        font-size: 16.5px;
+        line-height: 1.7;
+      }
+
+      /* 07 */
+      .qs {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        border-top: 2px solid var(--ink);
+        counter-reset: q;
+      }
+      .qs li {
+        counter-increment: q;
+        display: grid;
+        grid-template-columns: 64px 1fr;
+        gap: 12px;
+        padding: 16px 0;
+        border-bottom: 1px solid var(--line);
+      }
+      .qs li::before {
+        content: "Q" counter(q);
+        font-family: var(--num);
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 1.2;
+        color: var(--blue-deep);
+      }
+      .qs b {
+        color: var(--ink);
+      }
+
+      .notes {
+        background: var(--band);
+        margin-top: 60px;
+        padding: 40px 0 30px;
+        font-size: 15px;
+        line-height: 1.75;
+        color: var(--note);
+      }
+      .notes h2 {
+        font-size: 22px;
+        margin-bottom: 12px;
+      }
+      .notes ul {
+        margin: 0 0 16px;
+        padding-left: 1.2em;
+      }
+      .notes li {
+        margin-bottom: 4px;
+      }
+      footer {
+        padding: 30px 0 50px;
+        font-size: 16px;
+      }
+      footer .sig {
+        border-top: 2px solid var(--ink);
+        padding-top: 18px;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+      footer b {
+        font-family: var(--display);
+        font-size: 19px;
+        color: var(--ink);
+      }
+
+      @media (max-width: 860px) {
+        body {
+          font-size: 16.5px;
+        }
+        .facts,
+        .profile,
+        .sort,
+        .steps,
+        .plans {
+          grid-template-columns: 1fr;
+        }
+        .facts > div,
+        .profile > div,
+        .steps > div {
+          border-right: 0;
+          border-bottom: 1px solid var(--line);
+          padding-left: 0;
+        }
+        .facts > div + div {
+          padding-left: 0;
+        }
+        .profile > div,
+        .steps > div {
+          padding-left: 20px;
+        }
+        .toc ol {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .rhythm,
+        .keep,
+        .flow {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .rhythm > div,
+        .flow > div {
+          border-right: 0;
+          border-bottom: 1px solid var(--line);
+          padding-left: 0 !important;
+        }
+        .keep > div {
+          border-right: 0;
+          border-bottom: 1px solid var(--line);
+        }
+        .cards {
+          grid-template-columns: 1fr;
+        }
+        .tbl th,
+        .tbl td,
+        .tbl td.s {
+          display: block;
+          width: 100%;
+          border-bottom: 0;
+          padding: 10px 0 0;
+        }
+        .tbl tr {
+          display: block;
+          border-bottom: 1px solid var(--line);
+          padding-bottom: 12px;
+        }
+        section {
+          padding-top: 46px;
+        }
+      }
+      @media print {
+        .toc {
+          display: none;
+        }
+        section {
+          padding-top: 30px;
+        }
+        .card,
+        .plan,
+        .sort > div {
+          break-inside: avoid;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top">
+      <div class="wrap">
+        <span><b>COMIX</b>　株式会社コミクス</span>
+        <span>2026年11月18日　ご面談資料</span>
+      </div>
+    </div>
+
+    <header class="hero">
+      <div class="wrap">
+        <div class="to">
+          一般社団法人幸せな人と組織づくりサポート協会（HHOSA）<br />
+          代表理事 千代鶴 直愛 様
+        </div>
+        <h1>
+          生成AIで、代表の生産性を<em>10倍</em>に。<br />当社がご一緒できること。
+        </h1>
+        <p class="lead">
+          「生成AIを使って業務の生産性を10倍に上げたい」というご意向に対し、貴協会の公開情報と、当社が自社で実際にやってきたことをもとに、ご支援できる内容を18項目にまとめました。10倍は、作業を速くするだけでは届きません。手順が書ける仕事をAIに回し、千代鶴様の時間を「人にしかできない仕事」へ寄せる設計が要ります。
+        </p>
+        <div class="facts">
+          <div>
+            <div class="n accent">15.4<small>人分</small></div>
+            <p>
+              当社代表が1週間で出した成果物を人手に換算した生産能力（自社実測。成果を保証するものではありません）
+            </p>
+          </div>
+          <div>
+            <div class="n">304<small>社</small></div>
+            <p>生成AI活用のご支援実績（2026年10月31日現在）</p>
+          </div>
+          <div>
+            <div class="n">88<small>人</small></div>
+            <p>経営者向け「生成AI活用顧問」の導入人数（2026年9月末現在）</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="toc" aria-label="目次">
+      <div class="wrap">
+        <ol>
+          <li>
+            <a href="#s1"><span>01</span>貴協会の事業の理解</a>
+          </li>
+          <li>
+            <a href="#s2"><span>02</span>10倍の考え方</a>
+          </li>
+          <li>
+            <a href="#s3"><span>03</span>ご支援できる18項目</a>
+          </li>
+          <li>
+            <a href="#s4"><span>04</span>人が担い続ける仕事</a>
+          </li>
+          <li>
+            <a href="#s5"><span>05</span>当社がやってきたこと</a>
+          </li>
+          <li>
+            <a href="#s6"><span>06</span>進め方とご支援の形</a>
+          </li>
+          <li>
+            <a href="#s7"><span>07</span>本日うかがいたいこと</a>
+          </li>
+          <li>
+            <a href="#notes"><span>—</span>注記・出典</a>
+          </li>
+        </ol>
+      </div>
+    </nav>
+
+    <main>
+      <section id="s1">
+        <div class="wrap">
+          <div class="sec-no">01</div>
+          <h2>貴協会の事業の理解</h2>
+          <p class="intro">
+            <span class="lbl fact">公開情報</span
+            >貴協会のWebサイトから読み取った内容です。読み違いがあればご指摘ください。
+          </p>
+          <div class="profile">
+            <div>
+              <span class="tag">めざす姿</span>
+              <h3>幸せな企業を増やし、日本を幸福度世界一の国へ</h3>
+              <ul>
+                <li>2024年11月設立・東京都中央区銀座</li>
+                <li>
+                  ウェルビーイング経営をめざす企業のための「ラボラトリー型プラットフォーム」
+                </li>
+                <li>「場・視点・仲間」を提供する実践者の集まり</li>
+              </ul>
+            </div>
+            <div>
+              <span class="tag">会員と学びの場</span>
+              <h3>正会員と法人会員の2つの会員制度</h3>
+              <ul>
+                <li>オンラインセミナー＆交流会、リアル交流会</li>
+                <li>全員CHO体感ツアー（会社見学会）</li>
+                <li>HHOSAラウンジ（法人会員の個別相談）</li>
+                <li>幸せ力向上プログラム®</li>
+              </ul>
+            </div>
+            <div>
+              <span class="tag">講座と個別支援</span>
+              <h3>CHO養成講座と、企業ごとの伴走</h3>
+              <ul>
+                <li>CHO養成講座（6か月・全6回、第3期を募集中）</li>
+                <li>職場CHO養成講座</li>
+                <li>CHOビジョンの策定支援・浸透支援</li>
+                <li>社員総会・ショールームの企画と実施支援</li>
+              </ul>
+            </div>
+          </div>
+          <div class="rhythm">
+            <div>
+              <div class="f">月1回</div>
+              <p>オンラインセミナー＆交流会</p>
+            </div>
+            <div>
+              <div class="f">月4回</div>
+              <p>
+                ニュースレター（代表の連載コラム・活動報告・会員企業の事例）
+              </p>
+            </div>
+            <div>
+              <div class="f">年4回</div>
+              <p>全員CHO体感ツアー</p>
+            </div>
+            <div>
+              <div class="f">連載42回</div>
+              <p>noteでの発信（2026年11月17日更新分がVol.42）</p>
+            </div>
+            <div>
+              <div class="f">月に複数回</div>
+              <p>幸せ力向上プログラム®の公開回（オンライン・90分）</p>
+            </div>
+          </div>
+          <p class="intro" style="margin-top: 24px">
+            <span class="lbl est">当社の推定</span
+            >千代鶴様は、株式会社エンラボの代表取締役として研修・組織開発の現場に立ちながら、協会の企画・登壇・連載・会員との対話を担っておられます。定期の企画と発信の本数が多く、<strong>「準備・告知・原稿・フォロー」の時間が、対話と登壇の時間を押している</strong>のではないかと考えました。実際のところは、本日うかがいます。
+          </p>
+        </div>
+      </section>
+
+      <section id="s2">
+        <div class="wrap">
+          <div class="sec-no">02</div>
+          <h2>
+            10倍は「速く作業する」ではなく、「仕事の置き場所を変える」で届く
+          </h2>
+          <p class="intro">
+            文章を書くのが2倍速くなっても、生産性は2倍にしかなりません。当社は、仕事を次の3つの問いで仕分け、手順が書けるものを丸ごとAIに回しています。貴協会が発信されている「AI時代に、人間にしかできない領域が価値を持つ」という考え方と、同じ方向の設計です。
+          </p>
+          <div class="sort">
+            <div>
+              <div class="q">問い 1</div>
+              <h3>それは「決める」仕事か</h3>
+              <p>協会の方針、登壇テーマ、誰と組むか、価格、最終の文章。</p>
+              <p class="to2">→ 千代鶴様が担う</p>
+            </div>
+            <div>
+              <div class="q">問い 2</div>
+              <h3>相手の「顔を見る」必要があるか</h3>
+              <p>
+                登壇、対話のワーク、入会のご面談、ラウンジでのご相談、会社見学での関係づくり。
+              </p>
+              <p class="to2">→ 千代鶴様と講師の皆さまが担う</p>
+            </div>
+            <div class="ai">
+              <div class="q">問い 3</div>
+              <h3>手順を書けば再現できるか</h3>
+              <p>
+                告知文、リマインド、原稿の下書き、開催レポート、資料の作成、集計、日程調整の下書き。
+              </p>
+              <p class="to2">→ AIに回し、人は確認だけ</p>
+            </div>
+          </div>
+          <div class="steps">
+            <div>
+              <div class="s">STEP 1</div>
+              <h3>仕分けて、AIの土台をつくる</h3>
+              <p>
+                1週間の仕事を書き出し、3つの問いで仕分ける。千代鶴様の文体・判断基準・過去の原稿をAIに覚えさせる。
+              </p>
+            </div>
+            <div>
+              <div class="s">STEP 2</div>
+              <h3>定型の仕事を「型」にする</h3>
+              <p>
+                告知・原稿・フォロー・資料づくりを、同じ品質で繰り返し出せる手順にする。到達目標は生産性の実測5倍。
+              </p>
+              <div class="x">5<small>倍（目標）</small></div>
+            </div>
+            <div>
+              <div class="s">STEP 3</div>
+              <h3>複数の仕事を同時に走らせる</h3>
+              <p>
+                型になった仕事をAIが並行して進め、数字は一つの画面で見る。10倍はこの段階の先にあります。
+              </p>
+              <div class="x">10<small>倍（ご意向）</small></div>
+            </div>
+          </div>
+          <div class="caution">
+            <p>
+              <strong>数字の扱いについて。</strong
+              >「実測5倍」は当社のご支援の到達目標であり、成果を保証するものではありません。「10倍」は千代鶴様のご意向として置いた目標で、当社がお約束する数字ではありません。当社代表の15.4人分は生産能力の実測値で、同じ結果を保証するものではありません。ご一緒する場合は、始める前の時間と件数を測り、導入後と比べます。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="s3">
+        <div class="wrap">
+          <div class="sec-no">03</div>
+          <h2>ご支援できる18項目</h2>
+          <p class="intro">
+            貴協会の活動に合わせて、5つの領域・18項目に整理しました。<span
+              class="star"
+              style="
+                display: inline-block;
+                font-size: 15px;
+                font-weight: 700;
+                color: #fff;
+                background: #c9300a;
+                padding: 0 10px;
+                line-height: 1.6;
+              "
+              >最初に効く</span
+            >
+            の印は、時間の戻りが早いと当社が考える3項目です。対象の業務は公開情報からの当社の推定で、「当社の実績」は自社で実際に行ってきたことです。
+          </p>
+
+          <div class="grp">
+            <span class="k">A</span>
+            <h3>代表ご本人の時間を空ける</h3>
+            <span>4項目</span>
+          </div>
+          <div class="cards">
+            <div class="card first">
+              <span class="id">A1</span><span class="star">最初に効く</span>
+              <h4>仕事の仕分け（AIに回すもの・人が担うもの）</h4>
+              <p>
+                千代鶴様と事務局の1週間の仕事を書き出し、02の3つの問いで仕分けます。別途ご用意した業務の仕分け資料（18業務）を出発点に、実態に合わせて直します。
+              </p>
+              <dl>
+                <dt>当社の実績</dt>
+                <dd>
+                  当社代表が同じ仕分けを自分の仕事に行い、手元に残す仕事を「会う・決める・売る」に絞りました。
+                </dd>
+                <dt class="h">人が担う</dt>
+                <dd>何を手放すかの最終判断。</dd>
+              </dl>
+            </div>
+            <div class="card">
+              <span class="id">A2</span>
+              <h4>千代鶴様専用のAI環境づくり</h4>
+              <p>
+                過去の原稿、講演録、講座の資料、判断の基準をAIに読み込ませ、「千代鶴様の言葉で下書きが出る」状態をつくります。ご本人の手で組み立てるので、あとから自分で増やせます。
+              </p>
+              <dl>
+                <dt>当社の実績</dt>
+                <dd>
+                  自社のAI運用基盤として、手順書165本・AIの担当役31・自動実行15本・外部連携9系統を運用（2026年8月18日時点）。
+                </dd>
+                <dt class="h">人が担う</dt>
+                <dd>何を覚えさせるかの選定。</dd>
+              </dl>
+            </div>
+            <div class="card">
+              <span class="id">A3</span>
+              <h4>メール・メッセージ・日程調整の下書き</h4>
+              <p>
+                毎朝、未返信の連絡と当日の予定を1枚にまとめ、返信の下書きまで用意します。千代鶴様は読んで直し、送るだけにします。
+              </p>
+              <dl>
+                <dt>当社の実績</dt>
+                <dd>
+                  当社代表は毎朝、メール・チャット・予定をまとめた報告を自動で受け取っています。
+                </dd>
+                <dt class="h">人が担う</dt>
+                <dd>送信の判断と、相手との関係に関わる一言。</dd>
+              </dl>
+            </div>
+            <div class="card">
+              <span class="id">A4</span>
+              <h4>面談・打合せの記録とフォロー</h4>
+              <p>
+                オンライン面談の文字起こしから、議事録・宿題の一覧・お礼の文面を下書きします。面談の直後に次の一手が手元に揃います。
+              </p>
+              <dl>
+                <dt>当社の実績</dt>
+                <dd>
+                  当社の商談はこの流れで記録し、提案と送付の件数まで一つの台帳で追っています。
+                </dd>
+                <dt class="h">人が担う</dt>
+                <dd>面談そのものと、文面の最終確認。</dd>
+              </dl>
+            </div>
+          </div>
+
+          <div class="grp">
+            <span class="k">B</span>
+            <h3>発信（連載・ニュースレター・note）</h3>
+            <span>4項目</span>
+          </div>
+          <div class="cards">
+            <div class="card first">
+              <span class="id">B1</span><span class="star">最初に効く</span>
+              <h4>連載コラムとニュースレターの下書き</h4>
+              <p>
+                月4回のニュースレターとnoteの連載を、千代鶴様の過去の原稿と講演の内容から下書きします。人が担うのは「テーマを決める」と「原稿を確認する」の2つにします。
+              </p>
+              <dl>
+                <dt>当社の実績</dt>
+                <dd>
+                  noteを2か月で215記事公開（2026年8〜9月）。note経由のお問い合わせは2か月で84件。
+                </dd>
+                <dt class="h">人が担う</dt>
+                <dd>テーマの決定と、言葉の最終確認。</dd>
+              </dl>
+            </div>
+            <div class="card">
+              <span class="id">B2</span>
+              <h4>1本の原稿を、複数の媒体へ展開</h4>
+              <p>
+                コラム1本から、ニュースレター・note・SNSの投稿・イベントの告知文をまとめて作ります。媒体ごとに書き直す時間をなくします。
+              </p>
+              <dl>
+                <dt>当社の実績</dt>
+                <dd>
+                  直近1か月の生成成果物は4,668件（うちnote記事97本・PowerPoint244本）。
+                </dd>
+                <dt class="h">人が担う</dt>
+                <dd>どの媒体に出すかの判断。</dd>
+              </dl>
+            </div>
+            <div class="card">
+              <span class="id">B3</span>
+              <h4>プレスリリースの文面づくり</h4>
+              <p>
+                講座の開講、体感ツアー、会員企業の事例などを、リリースの文面へ展開します。テーマと読者を1行入れるところから始めます。
+              </p>
+              <dl>
+                <dt>当社の実績</dt>
+                <dd>
+                  教材10枚からリリース文面15本を、全工程1時間で作成（文面作成の実績で、配信・掲載の実績ではありません）。
+                </dd>
+                <dt class="h">人が担う</dt>
+                <dd>事実確認と、配信の判断。</dd>
+              </dl>
+            </div>
+            <div class="card">
+              <span class="id">B4</span>
+              <h4>AI検索で見つけてもらうための整備</h4>
+              <p>
+                「ウェルビーイング経営」「CHO」をAIに尋ねた人に、貴協会の情報が届きやすいよう、サイトの情報の出し方を診断し、直す順番を示します。
+              </p>
+              <dl>
+                <dt>当社の実績</dt>
+                <dd>
+                  自社開発の診断ツールで、7つの観点・100点満点で診断し、改善の指示書まで出します（AIの回答への掲載や順位は保証しません）。
+                </dd>
+                <dt class="h">人が担う</dt>
+                <dd>何を協会の言葉として出すかの判断。</dd>
+              </dl>
+            </div>
+          </div>
+
+          <div class="grp">
+            <span class="k">C</span>
+            <h3>イベントと講座の運営</h3>
+            <span>4項目</span>
+          </div>
+          <div class="cards">
+            <div class="card first">
+              <span class="id">C1</span><span class="star">最初に効く</span>
+              <h4>イベント告知の一式を、1回の入力で</h4>
+              <p>
+                テーマ・講師・日時を入れると、告知文、申込ページの文章、リマインド、当日の案内、お礼の文面まで一式を下書きします。月1回のセミナーと年4回のツアーで繰り返し使えます。
+              </p>
+              <dl>
+                <dt>当社の実績</dt>
+                <dd>
+                  自社セミナーの告知文・告知画像・案内文を、同じ型で繰り返し作成しています。
+                </dd>
+                <dt class="h">人が担う</dt>
+                <dd>講師との調整と、当日の進行。</dd>
+              </dl>
+            </div>
+            <div class="card">
+              <span class="id">C2</span>
+              <h4>参加された方へのフォロー</h4>
+              <p>
+                イベントに参加された方へ、参加回やご関心に合わせたお礼と次のご案内を下書きします。入会のご面談につなぐまでを途切れさせません。
+              </p>
+              <dl>
+                <dt>当社の実績</dt>
+                <dd>
+                  直近1か月で、提案・診断資料165本（67社分）→送付37→商談化26→受注20（2026年7月18日〜8月18日）。
+                </dd>
+                <dt class="h">人が担う</dt>
+                <dd>入会のご面談と、お一人ずつへの声かけ。</dd>
+              </dl>
+            </div>
+            <div class="card">
+              <span class="id">C3</span>
+              <h4>講座の教材・スライド・ワークシート</h4>
+              <p>
+                CHO養成講座（全6回）や幸せ力向上プログラム®の資料を、講義の内容から下書きし、期ごとの更新も短時間で行えるようにします。
+              </p>
+              <dl>
+                <dt>当社の実績</dt>
+                <dd>
+                  直近1か月でPowerPoint資料を244本生成。研修教材と講師用の台本も同じ基盤で作っています。
+                </dd>
+                <dt class="h">人が担う</dt>
+                <dd>講座の中身と、受講生との対話。</dd>
+              </dl>
+            </div>
+            <div class="card">
+              <span class="id">C4</span>
+              <h4>セミナーの録画から、レポートと発信へ</h4>
+              <p>
+                録画の文字起こしから、開催レポート、ニュースレターの記事、会員向けの要点まとめを下書きします。1回の開催を、複数の発信に生かします。
+              </p>
+              <dl>
+                <dt>当社の実績</dt>
+                <dd>
+                  自社の面談・セミナーの記録を、議事録・記事・解説動画の素材に展開しています。
+                </dd>
+                <dt class="h">人が担う</dt>
+                <dd>講師への掲載確認と、公開の判断。</dd>
+              </dl>
+            </div>
+          </div>
+
+          <div class="grp">
+            <span class="k">D</span>
+            <h3>会員対応と個別支援</h3>
+            <span>3項目</span>
+          </div>
+          <div class="cards">
+            <div class="card">
+              <span class="id">D1</span>
+              <h4>入会のお申込みからご案内までの流れ</h4>
+              <p>
+                お申込みを受けてから、名簿への記録、ご案内の文面、初回のイベント案内までを一つの流れに整え、抜けと手作業を減らします。
+              </p>
+              <dl>
+                <dt>当社の実績</dt>
+                <dd>
+                  自社で、申込フォーム→記録→通知→分析レポートまでを自動でつなぐ仕組みを運用しています。
+                </dd>
+                <dt class="h">人が担う</dt>
+                <dd>新しい会員の方を迎える最初の対話。</dd>
+              </dl>
+            </div>
+            <div class="card">
+              <span class="id">D2</span>
+              <h4>個別支援の提案書とお見積りの下書き</h4>
+              <p>
+                CHOビジョンの策定・浸透支援、社員総会やショールームの企画について、相手企業の公開情報と面談の記録から提案書を下書きします。
+              </p>
+              <dl>
+                <dt>当社の実績</dt>
+                <dd>
+                  当社の提案書は、この方法で1か月に165本（67社分）を作成しました（2026年7月18日〜8月18日）。
+                </dd>
+                <dt class="h">人が担う</dt>
+                <dd>提案の中身の判断と、相手企業との対話。</dd>
+              </dl>
+            </div>
+            <div class="card">
+              <span class="id">D3</span>
+              <h4>診断とアンケートの集計・レポート</h4>
+              <p>
+                法人会員向けの組織力診断や、イベント後のアンケートを集計し、報告書の下書きと次の打ち手の候補までまとめます。
+              </p>
+              <dl>
+                <dt>当社の実績</dt>
+                <dd>
+                  自社の初回商談の記録を自動で集計し、件数がたまるごとに分析レポートを出しています。
+                </dd>
+                <dt class="h">人が担う</dt>
+                <dd>結果の読み解きと、相手企業への伝え方。</dd>
+              </dl>
+            </div>
+          </div>
+
+          <div class="grp">
+            <span class="k">E</span>
+            <h3>経営の見える化と安全な使い方</h3>
+            <span>3項目</span>
+          </div>
+          <div class="cards">
+            <div class="card">
+              <span class="id">E1</span>
+              <h4>AI経営＆マーケティングダッシュボード</h4>
+              <p>
+                会員数、入会とご退会、イベントの参加、講座のお申込み、発信への反応を、一つの画面で見られるようにします。構築には当社代表の鈴木とCIOの橋本が伴走します。
+              </p>
+              <dl>
+                <dt>当社の実績</dt>
+                <dd>
+                  当社は自社の商談・受注・発信・AIの稼働を一つの画面で管理し、毎週の判断に使っています。
+                </dd>
+                <dt class="h">人が担う</dt>
+                <dd>数字を見て、何をやめ、何を増やすかを決めること。</dd>
+              </dl>
+            </div>
+            <div class="card">
+              <span class="id">E2</span>
+              <h4>週1回の振り返りと「今週やること」</h4>
+              <p>
+                1週間の活動と数字の動きをAIがまとめ、判断が要ることだけを選択肢つきで並べます。決める時間を週15分ほどに集めます。
+              </p>
+              <dl>
+                <dt>当社の実績</dt>
+                <dd>
+                  当社代表は、判断が要る案件を週1回まとめて裁定する運用を続けています。
+                </dd>
+                <dt class="h">人が担う</dt>
+                <dd>裁定そのもの。</dd>
+              </dl>
+            </div>
+            <div class="card">
+              <span class="id">E3</span>
+              <h4>安全な使い方の決まりごと</h4>
+              <p>
+                会員の情報やラウンジでのご相談内容など、AIに入れてよいもの・入れないものの線引きと、設定の手順を最初に整えます。
+              </p>
+              <dl>
+                <dt>当社の実績</dt>
+                <dd>
+                  当社は、鍵や個人情報をAIに読ませない設定と、送信前に人が確認する仕組みを自社で運用しています。
+                </dd>
+                <dt class="h">人が担う</dt>
+                <dd>線引きの決定と、会員の皆さまへの説明。</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="s4">
+        <div class="wrap">
+          <div class="sec-no">04</div>
+          <h2>人が担い続ける仕事</h2>
+          <p class="intro">
+            AIに回さない仕事を先に決めます。貴協会の価値は「場・視点・仲間」にあり、ここを薄めないことが前提です。空いた時間は、この5つに戻します。
+          </p>
+          <div class="keep">
+            <div>
+              <b>登壇と対話のワーク</b>
+              <p>その場の空気を読み、問いを投げること。</p>
+            </div>
+            <div>
+              <b>入会のご面談</b>
+              <p>相手の志を聞き、仲間として迎えること。</p>
+            </div>
+            <div>
+              <b>ラウンジでのご相談</b>
+              <p>経営者の悩みを受け止めること。</p>
+            </div>
+            <div>
+              <b>会社見学での関係づくり</b>
+              <p>現場を一緒に見て、語り合うこと。</p>
+            </div>
+            <div>
+              <b>方針と言葉の最終確認</b>
+              <p>協会として何を言うかを決めること。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="s5">
+        <div class="wrap">
+          <div class="sec-no">05</div>
+          <h2>当社がやってきたこと（自社の実測）</h2>
+          <p class="intro">
+            当社は、ご提案する内容をまず自社で試し、数字を測っています。以下は当社自身の記録で、同じ結果を保証するものではありません。
+          </p>
+          <table class="tbl">
+            <tbody>
+              <tr>
+                <th>
+                  <span class="big">15.4人分</span><br />代表1人の生産能力
+                </th>
+                <td>
+                  1週間の成果物689件を人手に換算すると759.8時間。実際に使った時間は49.5時間でした。
+                </td>
+                <td class="s">
+                  測定
+                  2026年7月29日〜8月5日。換算の係数は自社基準。生産能力の実測値であり、成果を保証するものではありません。
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <span class="big">165本 → 受注20件</span
+                  ><br />提案から受注まで
+                </th>
+                <td>
+                  提案・診断資料165本（67社分）を作成し、送付37、商談化26、受注20。
+                </td>
+                <td class="s">
+                  2026年7月18日〜8月18日。自社の提案管理台帳の実測。
+                </td>
+              </tr>
+              <tr>
+                <th><span class="big">4,668件</span><br />1か月の生成成果物</th>
+                <td>うちPowerPoint資料244本、note記事97本。</td>
+                <td class="s">同上の期間。</td>
+              </tr>
+              <tr>
+                <th>
+                  <span class="big">215記事・84件</span><br />noteの発信と反応
+                </th>
+                <td>
+                  2か月で215記事を公開（1日あたり約3.5記事）。note経由のお問い合わせは84件。
+                </td>
+                <td class="s">2026年8〜9月。</td>
+              </tr>
+              <tr>
+                <th>
+                  <span class="big">15本を1時間</span><br />リリース文面の作成
+                </th>
+                <td>教材10枚から、プレスリリースの文面15本へ展開。</td>
+                <td class="s">
+                  文面作成の実績で、配信・掲載の実績ではありません。
+                </td>
+              </tr>
+              <tr>
+                <th><span class="big">304社・88人</span><br />ご支援の実績</th>
+                <td>
+                  生成AI活用のご支援は304社。経営者向けの「生成AI活用顧問」は88人が導入。
+                </td>
+                <td class="s">
+                  304社は2026年10月31日現在、88人は2026年9月末現在。
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="s6">
+        <div class="wrap">
+          <div class="sec-no">06</div>
+          <h2>進め方と、ご支援の形</h2>
+          <p class="intro">
+            どの形でも、進め方は同じ4つの段階です。始める前の時間と件数を測り、導入後と比べます。
+          </p>
+          <div class="flow">
+            <div>
+              <div class="no">1</div>
+              <b>業務を選ぶ</b>
+              <p>仕分けの結果から、最初の1〜3業務を決める。</p>
+            </div>
+            <div>
+              <div class="no">2</div>
+              <b>その場で試す</b>
+              <p>面談の中で実際に動かし、使えるかを確かめる。</p>
+            </div>
+            <div>
+              <div class="no">3</div>
+              <b>一緒に実装する</b>
+              <p>時間・件数・品質を、導入の前後で比べる。</p>
+            </div>
+            <div>
+              <div class="no">4</div>
+              <b>運用を改善する</b>
+              <p>使いながら直し、次の業務へ広げる。</p>
+            </div>
+          </div>
+          <div class="plans">
+            <div class="plan main">
+              <span class="who">代表ご本人が主役</span>
+              <h3>AI経営＆マーケティングダッシュボード構築</h3>
+              <p>
+                千代鶴様ご本人の手で、AIの環境とダッシュボードを組み立てます。
+              </p>
+              <ul>
+                <li>1〜3か月目：週1回60分を12回</li>
+                <li>4〜12か月目：月2回30分</li>
+                <li>鈴木（代表）と橋本（CIO）の2名が伴走</li>
+                <li>
+                  到達目標は生産性の実測5倍（目標であり成果保証ではありません）
+                </li>
+              </ul>
+              <p class="src">対応する項目：A1〜A4、B1、C1、E1、E2</p>
+            </div>
+            <div class="plan">
+              <span class="who">代表ご本人が主役</span>
+              <h3>生成AI活用顧問</h3>
+              <p>経営者お一人に限定した、マンツーマンの伴走です。</p>
+              <ul>
+                <li>月2回・各30分のオンライン面談</li>
+                <li>チャットでの随時相談</li>
+                <li>課題の整理→優先順位→実践→改善</li>
+              </ul>
+              <p class="src">対応する項目：A1、A3、B1、E2、E3</p>
+            </div>
+            <div class="plan">
+              <span class="who">事務局・講師の皆さまと</span>
+              <h3>生成AI活用支援パック</h3>
+              <p>事務局の業務を、当社と一緒に棚卸しして自動化します。</p>
+              <ul>
+                <li>業務の棚卸しと活用のレクチャー</li>
+                <li>自動化の実装支援</li>
+                <li>仕組みの連携や開発まで行う形もあります</li>
+              </ul>
+              <p class="src">対応する項目：B2、C1〜C4、D1〜D3</p>
+            </div>
+          </div>
+          <p class="src" style="margin-top: 16px">
+            費用は本資料には載せていません。本日のお話をうかがったうえで、合う形と合わせてご案内します。
+          </p>
+        </div>
+      </section>
+
+      <section id="s7">
+        <div class="wrap">
+          <div class="sec-no">07</div>
+          <h2>本日うかがいたいこと</h2>
+          <ol class="qs">
+            <li>
+              <div>
+                <b>「10倍」で増やしたいのは何でしょうか。</b
+                >会員数、登壇や対話の時間、発信の本数、ご自身の自由な時間。何が10倍になれば成功かで、最初に手を付ける場所が変わります。
+              </div>
+            </li>
+            <li>
+              <div>
+                <b>いま、1週間でいちばん時間を使っている仕事は何でしょうか。</b
+                >準備、原稿、連絡、資料づくりのうち、手放したいものから教えてください。
+              </div>
+            </li>
+            <li>
+              <div>
+                <b>いまお使いの生成AIと、使い方を教えてください。</b
+                >使っている道具と頻度が分かれば、STEP
+                1をどこから始めるかが決まります。
+              </div>
+            </li>
+            <li>
+              <div>
+                <b
+                  >会員の情報やご相談の内容を、AIにどこまで入れてよいとお考えでしょうか。</b
+                >線引きを最初に決めておくと、あとの設計が速くなります。
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+    </main>
+
+    <div class="notes" id="notes">
+      <div class="wrap">
+        <h2>注記・出典</h2>
+        <ul>
+          <li>
+            貴協会に関する記述は、貴協会のWebサイト（トップ、私たちについて、法人向け、個人向け、会員制度、イベント、サービス内容、CHO養成講座、幸せ力向上プログラム®、お知らせ）を2026年11月18日に閲覧した内容にもとづきます。「幸せ力向上プログラム®」は株式会社エンラボの登録商標です。
+          </li>
+          <li>
+            「当社の推定」と記した箇所、および18項目の対象業務は、公開情報からの当社の推定です。実際の業務や課題は、ご面談でうかがった内容に合わせて差し替えます。
+          </li>
+          <li>
+            「10倍」は千代鶴様のご意向として置いた目標で、当社がお約束する数字ではありません。「実測5倍」は当社のご支援の到達目標であり、成果を保証するものではありません。
+          </li>
+          <li>
+            当社の実測の出典：「生産性15.4人分
+            AI経営実測記録」（2026年8月21日）、「AI支援メニュー一覧」、「note発信半自動化支援」、「PR
+            TIMES配信の半自動化」、「LLMOアナライザー
+            ご紹介資料」。換算の係数は自社基準です。
+          </li>
+          <li>
+            「当社の実績」のうち数字のない記述は、当社が自社の業務で運用している内容です。
+          </li>
+        </ul>
+        <p>本ページは検索エンジンに登録されない設定で公開しています。</p>
+      </div>
+    </div>
+
+    <footer>
+      <div class="wrap">
+        <div class="sig">
+          <div>
+            <b>鈴木章裕</b><br />
+            株式会社コミクス 代表取締役
+          </div>
+          <div>
+            Web：<a href="https://www.comix.co.jp/">https://www.comix.co.jp/</a
+            ><br />
+            30分オンライン面談の日時調整：<a
+              href="https://comix.eeasy.jp/suzuki/online"
+              >https://comix.eeasy.jp/suzuki/online</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
